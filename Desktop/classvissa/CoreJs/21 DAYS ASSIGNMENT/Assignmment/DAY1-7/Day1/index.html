@@ -95,11 +95,11 @@
 
 	}
 
-	function unclickTrigger(){
+	function removeTransition(){
 		this.classList.remove('play');
 	}
 	items.forEach(item=>item.addEventListener('mousedown',clickTrigger));
-	items.forEach(item=>item.addEventListener('mouseup',unclickTrigger));
+	items.forEach(item=>item.addEventListener('mouseup',removeTransition));
 
 
 </script>
